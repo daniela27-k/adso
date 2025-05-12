@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera{
+    padding-top: 5px; /* espacio arriba*/
+    padding-bottom: 35px; /* espacio abajo*/
+    background-color: rgb(196, 145, 243);/*aplico color al fondo de la cabecera*/
+    top: 0;/*inicio posicion arriba del navegador*/
+    left: 0;/*inicio posicion a la izquierda del navegador*/
+    width: 100%;/*ancho de la cabecera*/
+    position: fixed;/*dejo fija la cabecera*/
+}
+
+.cabecera .link-logo .logo {
+    width: 70px;/*ancho del logo*/
+    height: 60px;/*alto del logo*/
+    padding-left: 50px;
+}
+
+.cabecera .menu{
+display: inline-block;/*alinear todo el contenido de la cabecera al centro*/
+margin-left: 35%;/*alinear el menu desde la izquierda*/
+}
+.cabecera .menu a{
+font-family:'Arimo', sans-serif;
+transition: all 0.5s ease;
+margin-left: 3px;/*espacio entre cada palabra desde la izquierda*/
+margin-right: 9px;/*espacio entre cada palabra desde la derecha*/
+color: white; /*color de fuente*/
+font-size: 20px;/*tamaño de la fuente*/
+font-weight: bold;/*negrilla*/
+text-transform:uppercase;/*convertimos a mayuscula*/
+text-decoration: none;/*quitamos la linea debajo del texto*/
+letter-spacing: 2px;/*espacio entre cada letra de la palabra*/
+word-spacing: 6px;/*espacio entre cada palabra*/
+padding: 15px 10px;/*espacio entre el texto y el borde del menu*/
+border-radius: 8px;/*esquinas redondeadas*/
+}
+.cabecera .menu a:hover{
+background-color: black;/*color de fondo al pasar el mouse por encima del texto*/
+color: rgb(185, 211, 160);
+padding: 9px 5px;
+}
+
+/*aplicamos estilo a la seccion de #lacarta */
+
+h1{
+font-size: 4rem;  
+text-transform: uppercase;  
+font-weight: bold;
+color: black;
+background-color: rgb(218, 178, 255);
+text-align: center;/*alinear texto en el centro*/
+}
+.carta{
+    width: 100%;
+    text-align: center;
+}
+.carta a{
+    font-size: 30px;
+    font-family: 'arimo', /*tipo de letra*/;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cartaimg{
+    text-align: center;/*alinear el texto al centro*/
+    word-spacing: 30px;
+}
+p{
+font-family: 'arimo', sans-serif;/*tipo de letra*/ 
+font-size: 25px;/*tamaño de la fuente*/
+}
+
+#lacarta{
+cursor: pointer;/*cuando pase el cursor se convieta en una manito*/    
+}
+.section{
+ width: 100%;/*ancho de la seccion*/
+ height: 100vh;/*alto de la seccion*/
+ padding: 0px; 
+ margin: 50px; 
+ align-items: center;
+ justify-content: center;
+ display: flex; 
+}
+.ecard-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ecard{
+    background-color: rgb(255, 227, 227);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba (black, 0,0,0,0.1);
+    width: 410px;
+    height: 900px;
+    overflow: hidden;
+    text-align: center;
+    margin: 15px;
+    border: 5px solid rgb(14, 13, 13);
+}
+
+.ecard img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0; 
+}
+.ecard-content{
+    padding: 60rem;
+}
+
+.ecard h2{
+    margin: 0.2rem 4;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ecard p{
+    font-size: 1.25rem;
+    color: rgb(8, 8, 8);
+    margin-bottom: 1rem;
+}
+
+.ecard .carrito{
+    width: 10%;
+    height: 150px;
+    border: none;
+    padding: 0.7rem 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-left: 100px;
+}
+.ecard .carrito:hover{
+    background-color: #b5eeee;
+}
+ 
+#productos {
+    background-color: #fffffff5;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 3.5rem;
+    color: #c8b9e6;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.productos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.producto{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover{
+    transform: scale(1.05);
+}
+
+.producto img{
+    width: 500;
+    height: 500px;
+    object-fit: cover;
+}
+
+.producto h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    margin-top: 1rem;
+    color: #222;
+}
+
+.producto p {
+    font-size: 50px;
+    font-family: "Arial, Helvetica, sans-serif";
+    padding: 0 2rem 1.5rem;
+    color: #0c0c0c;
+}
+
+.producto .carrito{
+ width: 10%;
+    height: 150px;
+    border: none;
+    padding: 0.7rem 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-left: 100px;
+}   
