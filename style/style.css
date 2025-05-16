@@ -6,7 +6,7 @@
 .cabecera{
     padding-top: 5px; /* espacio arriba*/
     padding-bottom: 35px; /* espacio abajo*/
-    background-color: rgb(196, 145, 243);/*aplico color al fondo de la cabecera*/
+    background-color: rgb(216, 189, 241);/*aplico color al fondo de la cabecera*/
     top: 0;/*inicio posicion arriba del navegador*/
     left: 0;/*inicio posicion a la izquierda del navegador*/
     width: 100%;/*ancho de la cabecera*/
@@ -28,7 +28,7 @@ font-family:'Arimo', sans-serif;
 transition: all 0.5s ease;
 margin-left: 3px;/*espacio entre cada palabra desde la izquierda*/
 margin-right: 9px;/*espacio entre cada palabra desde la derecha*/
-color: white; /*color de fuente*/
+color: rgb(29, 28, 28); /*color de fuente*/
 font-size: 20px;/*tamaño de la fuente*/
 font-weight: bold;/*negrilla*/
 text-transform:uppercase;/*convertimos a mayuscula*/
@@ -51,7 +51,7 @@ font-size: 2rem;
 text-transform: uppercase;  
 font-weight: bold;
 color: black;
-background-color: rgb(218, 178, 255);
+background-color: rgb(112, 234, 238);
 text-align: center;/*alinear texto en el centro*/
 }
 .carta{
@@ -94,15 +94,13 @@ cursor: pointer;/*cuando pase el cursor se convieta en una manito*/
     justify-content: center;
 }
 .ecard{
-    background-color: rgb(255, 227, 227);
-    /* border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba (rgb(26, 12, 214), 0,0,0,0.1); */
-    width: 400px;
-    height: 850px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba (rgb(26, 12, 214), 0,0,0,0.1); 
     overflow: hidden;
     text-align: center;
     margin: 15px;
-    border: 5px solid rgb(14, 13, 13);
+    
 }
 
 .ecard img{
@@ -129,18 +127,22 @@ cursor: pointer;/*cuando pase el cursor se convieta en una manito*/
 }
 
 .ecard .carrito{
-    width: 10%;
-    height: 150px;
+ width: 60px;
+    height: 60px;
+    background-color: #a2d2ff;
     border: none;
-    padding: 0.7rem 0.4rem;
-    border-radius: 0.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
     cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    margin-left: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
- 
+
 #productos {
     background-color: #fffffff5;
     padding: 3rem rem;
@@ -167,8 +169,8 @@ cursor: pointer;/*cuando pase el cursor se convieta en una manito*/
 .ecard{
     width: 350px;
     background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: px;
+     box-shadow: 0 4px 10px hsl(260, 47%, 81%);
     overflow: hidden;
     transition: transform 0.3s ease;
     text-align: left;
@@ -176,9 +178,6 @@ cursor: pointer;/*cuando pase el cursor se convieta en una manito*/
     height: 500px;
 }
 
-.ecard:hover{
-    transform: scale(1.1);
-}
 
 .ecard img{
     width: 100%;
@@ -200,12 +199,18 @@ cursor: pointer;/*cuando pase el cursor se convieta en una manito*/
 }
 
 .ecard .carrito{
-    width: 100px;
-    height: 100px;
-   display: block;
-   margin: 1rem auto 0; /*centra horizontalmente*/
-    right: 1rem;
+    width: 60px;
+    height: 60px;
+    background-color: #a2d2ff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #contactanos {
